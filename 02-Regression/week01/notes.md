@@ -79,7 +79,7 @@ $\frac{dg(w)}{dw}= 0 - 2 \times (w - 10) \times 1$ = $-2w +20 = 0$; $w = 10$
 
 <img src="assets/optimization-04.png" style="zoom:50%"/>
 
-That was one way of finding the minimum or the maximum of a function, getting the derivative of the function and setting it to zero. But, there are other algorithm like **hill-climbing** where it is going to be an iterative, by changing the value of w.
+That was one way of finding the minimum or the maximum of a function, getting the derivative of the function and setting it to zero. But, there are other algorithms like **hill-climbing** where it is going to be an iterative, by changing the value of w.
 
 At the beginning we don't know either we should go left or right to get the optimal value. What can I do? taking the derivative, if the derivative is positive, this is the case that I want to increase the w.  For the second point at the figure, the derivative is going to be negative. If we split the figure into two halves, on the left side the derivative of $g(w)$ is going to be positive, on the right side it is going to negative. And when you are at the exact optimal point, the derivative is equal to zero. So, this is the derivative that tells me what to do.
 
@@ -131,6 +131,20 @@ There are different ways to illustrate the function that we are optimizing over 
 In the above figure (bottom-right) we are looking at the magnitude of the gradient of $g(w)$, an when it is smaller than our predefined threshold we say it is converged.
 
 ### Finding the least squares line
+
+Now that we all know about the optimization behind the scene, it is time to find the line with the minimum cost.
+
+<img src="assets/optimization-14.png" style="zoom:50%"/>
+
+ We want to compute the gradient part, so according to the our formula we should take partial derivative:
+
+<img src="assets/optimization-15.png" style="zoom:50%"/>
+
+ <img src="assets/optimization-16.png" style="zoom:50%"/>
+
+Now that we have the gradient, we have two options to find the minimum, just like the beginning, we can either set it to zero, or we can use the gradient descent approach.
+
+
 
 Week 1:
 

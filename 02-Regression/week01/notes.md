@@ -144,14 +144,42 @@ Now that we all know about the optimization behind the scene, it is time to find
 
 Now that we have the gradient, we have two options to find the minimum, just like the beginning, we can either set it to zero, or we can use the gradient descent approach.
 
+**Approach 1**: Set gradient = 0
 
+Set it equal to zero and solve for $w_0$ and $w_1$.
 
-Week 1:
+<img src="assets/optimization-17.png" style="zoom:50%"/>
 
-- [x] ~~An aside on optimization (one dimensional objectives)~~
-- [x] An aside on optimization (multidimensional objectives)
-- [ ] Finding the least squares line
-- [ ] Programming assignment
+The point is, it has a close-form, it is pretty straightforward and go compute this. We only need to compute the formulas on the bottom-right side. The takeaway is that one way to solve the minimization of residual sum of square is to the gradient and set to zero.
+
+**Approach 2**: Gradient descent
+
+The other approach we can take is to do gradient descent, trying to get the minimum.
+
+Let's re-interpret what we have:
+
+<img src="assets/optimization-18.png" style="zoom:50%"/>
+
+<img src="assets/optimization-19.png" style="zoom:50%"/>
+
+<img src="assets/optimization-20.png" style="zoom:50%"/>
+
+<img src="assets/optimization-21.png" style="zoom:50%"/>
+
+* If overall, we underpredicting $\hat{y_i}$, the subtract it with $y_i$ is going to be positive, so at the end, it will cause $w_0$ to increase which makes sense, we unpredicted, but the formula increase it; to fix the our estimation.
+
+<img src="assets/gradient-descent-alg-01.png" style="zoom:50%"/>
+
+Comparing the approaches
+
+* Firstly, for most ML problems, cannot solve gradient = 0, why probably because there are a tons of features and even if it was feasible, gradient descent will perform better and it is more efficient.
+* *Gradient descent* relies on choosing **stepsize** and **convergence** criteria.
+
+**High leverage points**: Is a point along the input axis and is an outlier, for instance, the point which has crime-rate above 350 was a high leverage point. It is very very different from others. It influences the close-form solution severely.
+
+**Influential observations**: Just because an observation is a high leverage point does not mean it is going to influence the data strongly, because it might follow the trend of the data. However, it has the potential. Influential observation <u>is an observation that if you remove it from the data you'd get a very different fit</u>. Other observations that are not leverage points can also be influential observations, the potential for doing so, is much less.
+
+* Residual sum of square is something which is called **Symmetric** cost functions; because it has same cost if we over-estimate or under-estimate. In some situations, one of them could cost more! Then we should look for **asymmetric** cost functions.
 
 Week 2:
 

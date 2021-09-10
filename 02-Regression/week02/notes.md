@@ -4,7 +4,7 @@ Goal of this week is to run the regression algorithm using multiple features, wh
 
 ### Multiple features of one input
 
-In a lot of cases, we are going to be interested in more complex functions of our input. why? Because often there is not a linear relationship between single feature and the output, the relation might be more complex. Let's say it is a quadratic function.
+In a lot of cases, we are going to be interested in more c**omplex functions** of our input. why? Because often there is not a linear relationship between single feature and the output, the relation might be more complex. Let's say it is a quadratic function.
 
 <img src="assets/multiple-regression-01.png" style="zoom:50%"/>
 
@@ -16,7 +16,7 @@ Still, we have one input (sqft_living), but we want to use different features of
 
 <img src="assets/multiple-regression-03.png" style="zoom:50%"/>
 
-Why we need to have different features of the same input? The instructor mentioned the house prices during 20-year period, if you only use single feature we considered only the linear relationship among them, house prices tends to be different in different season, so we need a function to capture the seasonality:
+Why we need to have different features of the same input? The instructor mentioned the house prices during 20-year period, if you only use single feature we considered only the linear relationship among them, house prices tends to be different during different seasons, so we need a function to capture the **seasonality**:
 
 <img src="assets/multiple-regression-04.png" style="zoom:50%"/>
 
@@ -26,7 +26,7 @@ If we apply the previous model to the house seasonality trend, before doing this
 
 <img src="assets/multiple-regression-06.png" style="zoom:50%"/>
 
-We we see seasonality? In weather modeling, such as temperature, rainfall. Or in  Flu monitoring.
+Where we see seasonality? In weather modeling, such as temperature, rainfall. Or in  Flu monitoring.
 
 More generally any function of our single input is possible, so we are going to make our model more general:
 
@@ -38,7 +38,7 @@ So, if we want to update our block-diagram, the output of feature-extraction is 
 
 ### Incorporating multiple inputs
 
-So far, we have been talking about how it makes sense to have multiple features of one input, but even that models cannot grasp the whole trend behind the dataset, and we need literally more inputs to understand the flow of the data. For instance for the house pricing problem, we are going to use number of bathrooms in addition to the square feet.
+So far, we have been talking about how it makes sense to have multiple features of one input, but even that models cannot grasp the whole trend behind the dataset, and we need literally **more inputs** to understand the flow of the data. For instance for the house pricing problem, we are going to use number of bathrooms in addition to the square feet.
 
 So now, we'd have a higher dimensional space:
 

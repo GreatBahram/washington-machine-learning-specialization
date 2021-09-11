@@ -95,7 +95,7 @@ We can also use the hill climbing algorithm to find the minimum of a function. W
 
 <img src="assets/optimization-07.png" style="zoom:50%"/>
 
-* We mostly use convex function in this module.
+* We mostly use **convex** function in this module.
 
 Choosing step-size and convergence criteria:
 
@@ -112,9 +112,9 @@ Another important design decision is when we should stop our algorithm? We know 
 
 ### An aside on optimization (multidimensional objectives)
 
-Up until now, we only talked about getting derivative a function with only one variable, but in our RSS formula we have two variables, and we want to minimize over both variables. Instead of derivative, we are going to talk about gradient and what gradient is?
+Up until now, we only talked about getting **derivative** a function with only one variable, but in our RSS formula we have two variables, and we want to minimize over both variables. Instead of derivative, we are going to talk about **gradient** and what gradient is?
 
-Gradient of a function is a vector of partial derivative of different parameters.
+Gradient of a function is a vector of **partial derivative** of different parameters.
 
 <img src="assets/optimization-10.png" style="zoom:50%"/>
 
@@ -128,7 +128,7 @@ There are different ways to illustrate the function that we are optimizing over 
 
 <img src="assets/optimization-13.png" style="zoom:50%"/>
 
-In the above figure (bottom-right) we are looking at the magnitude of the gradient of $g(w)$, an when it is smaller than our predefined threshold we say it is converged.
+In the above figure (bottom-right) we are looking at the **magnitude** of the gradient of $g(w)$, an when it is smaller than our predefined threshold we say it is converged.
 
 ### Finding the least squares line
 
@@ -142,7 +142,7 @@ Now that we all know about the optimization behind the scene, it is time to find
 
  <img src="assets/optimization-16.png" style="zoom:50%"/>
 
-Now that we have the gradient, we have two options to find the minimum, just like the beginning, we can either set it to zero, or we can use the gradient descent approach.
+Now that we have the gradient, we have <u>two options to find the minimum</u>, just like the beginning, we can either set it to zero, or we can use the gradient descent approach.
 
 **Approach 1**: Set gradient = 0
 
@@ -180,12 +180,4 @@ Comparing the approaches
 **Influential observations**: Just because an observation is a high leverage point does not mean it is going to influence the data strongly, because it might follow the trend of the data. However, it has the potential. Influential observation <u>is an observation that if you remove it from the data you'd get a very different fit</u>. Other observations that are not leverage points can also be influential observations, the potential for doing so, is much less.
 
 * Residual sum of square is something which is called **Symmetric** cost functions; because it has same cost if we over-estimate or under-estimate. In some situations, one of them could cost more! Then we should look for **asymmetric** cost functions.
-
-Week 2:
-
-- [ ] mutiple features of one input
-- [ ] incorporating multiple inputs
-- [ ] setting the stage for computing the least squares fit
-- [ ] computing the least squares D-dimensional curve
-- [ ] programming assignment
 

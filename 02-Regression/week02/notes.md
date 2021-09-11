@@ -121,7 +121,7 @@ As you remember (hopefully), we initialized our parameters somewhere and take th
 
 
 
-Updating all coefficients all together (at once) can be problematic (computationally), so we are looking to update them feature-by-feature. We are going to solve the RSS formula for $j$ feature and then use that for inside the gradient descent algorithm.
+Updating coefficients **all together** (at once) can be problematic (computationally), so we are looking to update them feature-by-feature. We are going to solve the RSS formula for $j$ feature and then use that for inside the gradient descent algorithm.
 
 <img src="assets/multiple-regression-12.png" style="zoom:50%"/>
 
@@ -129,6 +129,6 @@ Updating all coefficients all together (at once) can be problematic (computation
 
 Summary of gradient descent for multiple regression
 
-* magnitude of the gradient is equal to multiply the vector to its transpose and then taking the square root.
+* **magnitude** of the gradient is equal to multiply the vector to its transpose and then taking the square root.
 
 <img src="assets/multiple-regression-14.png" style="zoom:50%"/>

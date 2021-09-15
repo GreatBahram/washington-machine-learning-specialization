@@ -111,24 +111,4 @@ What we can do to remedy the problem? Create two test data sets.
 
 
 
-* Model assessment: assess the model generalization error. 
-
-Monday
-
-- [x] ~~Putting the pieces together 8'~~
-- [ ] Programming assignment
-
-
-
-Week 4 - Ridge Regression
-
-Tuesday
-
-- [ ] Characteristics of over-fit models 22'
-- [ ] The ridge objective 36'
-
-Wednesday
-
-- [ ] Optimizing the ridge objective 25'
-- [ ] Tying up the loose ends 15'
-- [ ] Programming 1 and 2
+* Model assessment: assess the model generalization error.

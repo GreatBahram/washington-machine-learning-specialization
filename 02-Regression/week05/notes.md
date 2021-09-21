@@ -216,23 +216,4 @@ Some practical notes related to Lasso:
 
 <img src="assets/coordinate-descent-10.png" style="zoom:50%"/>
 
-Todos:
-
-**Week 05**
-
-- [x] Feature selection via explicit model enumeration 21
-- [x] Feature selection implicitly via regularized regression 14
-- [x] Geometric intuition for sparsity of lasso solutions 35
-- [x] Setting the stage for solving the lasso 19
-- [x] Optimizing the lasso objective 8
-- [ ] Tying up loose ends 8
-- [ ] Programming assignments 1
-- [ ] Programming assignments 2
-
-**Week 06**
-
-- [ ] Nearest neighbor regression 15
-- [ ] k-Nearest neighbors and weighted k-nearest neighbors 14
-- [ ] Kernel regression 12
-- [ ] k-NN and kernel regression wrapup  12
-- [ ] Programming assignment 
+* If we are looking for a certain number of non-zero features, let's say for an interpretable regression algorithms, we can do is to find a max L1 penalty and min L1 penalty then generate some numbers in this range and choose the one with the minimum RSS.
